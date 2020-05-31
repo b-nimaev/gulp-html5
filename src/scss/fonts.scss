@@ -1,0 +1,18 @@
+@for $i from 1 through 6 {
+  h#{$i} {
+  	margin: 0;
+  	font-family: 'righteous', sans-serif;
+  }
+}
+p, ul{
+	margin: 0;
+}
+ul{
+	padding: 0;
+}
+*{
+	line-height: 1;
+}
+body{
+	font-family: 'quicksand', sans-serif;
+}
