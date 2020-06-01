@@ -2849,14 +2849,49 @@ body {
       .headertop nav ul li {
         text-transform: capitalize;
         margin: auto 15px; }
+        .headertop nav ul li a {
+          display: block;
+          text-decoration: none;
+          color: #888;
+          box-shadow: 0 0 3px transparent;
+          transition: .3s;
+          transform: scale(1);
+          position: relative;
+          top: 0;
+          font-family: 'Josefin Sans', sans-serif; }
+          .headertop nav ul li a:hover {
+            top: -5px;
+            color: #000;
+            text-shadow: 0 0 3px #000; }
+          .headertop nav ul li a:active {
+            transform: scale(1.05); }
 
 header {
   padding: 50px 0;
-  background: #ccc; }
+  font-family: 'Play', sans-serif; }
   header .slider .slide {
     border-radius: 10px; }
     header .slider .slide img {
+      width: 100%;
       border-radius: 10px; }
+  header h6 {
+    font-family: 'Pt sans', sans-serif;
+    font-weight: 300;
+    font-style: italic; }
+  header p {
+    margin-bottom: 7.5px; }
+  header ul {
+    padding: 0 0 0 20px;
+    margin-bottom: 15px;
+    list-style-type: none; }
+    header ul li {
+      font-style: italic;
+      text-transform: capitalize; }
+      header ul li:before {
+        content: '-';
+        margin-right: 5px; }
+    header ul:last-child li:last-child {
+      text-transform: unset; }
 
 main {
   padding: 100px 0;

@@ -21,12 +21,12 @@
 					</button>
 					<nav>
 						<ul>
-							<li>home</li>
-							<li>about us</li>
-							<li>services</li>
-							<li>portfolio</li>
-							<li>blog</li>
-							<li>contact us</li>
+							<li><a href="javascript:void(0)">home</a></li>
+							<li><a href="javascript:void(0)">about us</a></li>
+							<li><a href="javascript:void(0)">services</a></li>
+							<li><a href="javascript:void(0)">portfolio</a></li>
+							<li><a href="javascript:void(0)">blog</a></li>
+							<li><a href="javascript:void(0)">contact us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -35,15 +35,39 @@
 	</div>
 	<header>
 		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+			
 			<div class="slider">
-				<div class="slide"><img src="assets/img/slider/2.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/3.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/4.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/5.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/6.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/7.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/8.jpg" width="100%" alt=""></div>
-				<div class="slide"><img src="assets/img/slider/9.jpg" width="100%" alt=""></div>
+				<div class="slide"><img src="assets/img/slider/2.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/3.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/4.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/5.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/6.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/7.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/8.jpg" alt="slide"></div>
+				<div class="slide"><img src="assets/img/slider/9.jpg" alt="slide"></div>
+			</div>
+
+				</div>
+				<div class="col">
+					<h2>Awesome heading title</h2>
+					<h6>YOU <b>can</b> drag this slider!</h6>
+					<hr>
+					<p>При разработке использовал таскраннер Gulp, а также:</p>
+					<ul>
+						<li>html/css</li>
+						<li>jquery/javasccript</li>
+						<li>slick slider</li>
+						<li>photoshop</li>
+					</ul>
+					<p>Выходные данные:</p>
+					<ul>
+						<li>pagespeed insights: <b>100%</b></li>
+						<li>масса: <b>319kb</b></li>
+						<li>.html, .css, .js., ['.img', '.jpg', '.svg', '.gif']: <b>оптимизированы</b></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -148,11 +172,11 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="block col-lg-3">
 					<h4>About us</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, modi, sint veritatis incidunt iure repellendus reiciendis cupiditate dignissimos, obcaecati nemo amet. Omnis reiciendis illum molestias, libero amet enim veritatis dolor.</p>
 				</div>
-				<div class="col-lg-2">
+				<div class="block col-lg-2">
 					<h4>Explore</h4>
 					<ul>
 						<li>Home</li>
@@ -162,7 +186,7 @@
 						<li>Blog</li>
 					</ul>
 				</div>
-				<div class="col-lg-2">
+				<div class="block col-lg-2">
 					<h4>Browse</h4>
 					<ul>
 						<li>Careers</li>
@@ -172,7 +196,7 @@
 						<li>Privacy Policy</li>
 					</ul>
 				</div>
-				<div class="col-lg-2">
+				<div class="block col-lg-2">
 					<h4>Contact us</h4>
 					<ul>
 						<li><b>Alexandr b-nimaev</b></li>
@@ -183,7 +207,7 @@
 						<li>telegram: @supermanq</li>
 					</ul>
 				</div>
-				<div class="socials col-lg-3">
+				<div class="socials block col-lg-3">
 					<h4>Connect with us</h4>
 					<div class="row">
 						<div class="col-3 d-flex">
@@ -199,7 +223,10 @@
 					</div>
 				</div>
 			</div>
-			<p>&copy;Copyright 2020 - Alexandr b-nimaev. All rights not reserved. lorem ipsum dolor sit amet.</p>
+			<div class="d-flex">
+				<p class="my-auto ">&copy;Copyright 2020 - Alexandr b-nimaev. All rights not reserved. lorem ipsum dolor sit amet.</p>
+				<h1 class="logotype ml-auto">Bis<span class="primary">Lite</span></h1>
+			</div>
 		</div>
 	</footer>
 

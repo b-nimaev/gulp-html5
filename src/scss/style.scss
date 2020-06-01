@@ -29,6 +29,25 @@
 			li{
 				text-transform: capitalize;
 				margin: auto 15px;
+				a{
+					display: block;
+					text-decoration: none;
+					color: #888;
+					box-shadow: 0 0 3px transparent;
+					transition: .3s;
+					transform: scale(1);
+					position: relative;
+					top: 0;
+					font-family: 'Josefin Sans', sans-serif;
+					&:hover{
+						top: -5px;
+						color: #000;
+						text-shadow: 0 0 3px #000;
+					}
+					&:active{
+						transform: scale(1.05);
+					}
+				}
 			}
 		}
 	}
@@ -36,12 +55,39 @@
 
 header{
 	padding: 50px 0;
-	background: $second;
+	font-family: 'Play', sans-serif;
 	.slider{
 		.slide{
 			border-radius: 10px;
 			img{
+				width: 100%;
 				border-radius: 10px;
+			}
+		}
+	}
+	h6{
+		font-family: 'Pt sans', sans-serif;
+		font-weight: 300;
+		font-style: italic;
+	}
+	p{
+		margin-bottom: 7.5px;
+	}
+	ul{
+		padding: 0 0 0 20px;
+		margin-bottom: 15px;
+		list-style-type: none;
+		li{
+			font-style: italic;
+			text-transform: capitalize;
+			&:before{
+				content: '-';
+				margin-right: 5px;
+			}
+		}
+		&:last-child{
+			li:last-child{
+				text-transform: unset;
 			}
 		}
 	}
