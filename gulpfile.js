@@ -49,9 +49,22 @@ function sassReload() {
 
 }
 
+function imageMin() {
+	return gulp.src(path.img + "**/*")
+	.pipe(imagemin())
+	.pipe(gulp.dest(path.img))
+}
+
 function js() {
 	return gulp.src(path.js + "**/*.js")
 	.pipe(browserSync.stream())
 }
 
-exports.default = serve;
+function concatjs() {
+	return gulp.src(path.js + ['jquery.js', 'libs/slick.min.js', 'index.js'])
+	.pipe(concatjs())
+	.pipe(gulp.dest(path.src))
+}
+
+exports.build = imageMin;
+exports.default = concatjs;

@@ -122,10 +122,13 @@ main{
 	#latestWorks{
 		.slider{
 			display: flex;
+			height: 100%;
 			.slide{
 				flex-basis: 25%;
+				height: 100%;
 				cursor: pointer;
 				img{
+					display: block;
 					width: 100%;
 					height: auto;
 				}
@@ -229,6 +232,34 @@ footer{
 		}
 		padding: 25px;
 	}
+	main{
+		margin: 0;
+		padding: 0;
+		section{
+			margin: 30px auto;
+		}
+		#appearance{
+			margin-bottom: -30px;
+			.appearance{
+				margin-bottom: 30px;
+			}
+		}
+	}
+	footer{
+		.logotype{
+			flex: 100%;
+			justify-content: left;
+		}
+		.block{
+			margin-bottom: 30px;
+		}
+		.d-flex{
+			flex-wrap: wrap;
+		}
+		.logotype{
+			flex: 100%;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -282,6 +313,16 @@ footer{
 					height: 200px;
 				}
 			}
+		}
+	}
+	header{
+		h2{
+			margin-top: 30px;
+		}
+	}
+	main{
+		section{
+			margin: 30px auto;
 		}
 	}
 }

@@ -2913,11 +2913,14 @@ main {
     main #appearance button img {
       margin: auto 5px auto 0; }
   main #latestWorks .slider {
-    display: flex; }
+    display: flex;
+    height: 100%; }
     main #latestWorks .slider .slide {
       flex-basis: 25%;
+      height: 100%;
       cursor: pointer; }
       main #latestWorks .slider .slide img {
+        display: block;
         width: 100%;
         height: auto; }
   main #testimionals p {
@@ -2985,7 +2988,25 @@ footer {
     .headertop .logotype {
       font-size: 25px; }
     .headertop nav ul li {
-      margin: auto 5px; } }
+      margin: auto 5px; }
+  main {
+    margin: 0;
+    padding: 0; }
+    main section {
+      margin: 30px auto; }
+    main #appearance {
+      margin-bottom: -30px; }
+      main #appearance .appearance {
+        margin-bottom: 30px; }
+  footer .logotype {
+    flex: 100%;
+    justify-content: left; }
+  footer .block {
+    margin-bottom: 30px; }
+  footer .d-flex {
+    flex-wrap: wrap; }
+  footer .logotype {
+    flex: 100%; } }
 
 @media (max-width: 768px) {
   .headertop .menu {
@@ -3027,4 +3048,8 @@ footer {
     transition: 300ms; }
     .headertop nav ul.menuVisible {
       opacity: 1;
-      height: 200px; } }
+      height: 200px; }
+  header h2 {
+    margin-top: 30px; }
+  main section {
+    margin: 30px auto; } }
