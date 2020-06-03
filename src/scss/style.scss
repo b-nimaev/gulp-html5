@@ -5,324 +5,67 @@
 @import 'libs/slick/slick.scss';
 @import 'libs/slick/slick-theme.scss';
 
-.headertop{
-	padding: 50px 0;
-	background: #fafafa;
-	.menu{
-		display: flex;
-		button{
-			display: none;
-		}
-	}
-	.logotype{
-		font-size: 50px;
-		.primary{
-			color: #81c8da;
-		}
-	}
-	nav{
-		display: block;
-		margin: auto 0 auto auto;
-		ul{
-			display: flex;
-			list-style-type: none;
-			li{
-				text-transform: capitalize;
-				margin: auto 15px;
-				a{
-					display: block;
-					text-decoration: none;
-					color: #888;
-					box-shadow: 0 0 3px transparent;
-					transition: .3s;
-					transform: scale(1);
-					position: relative;
-					top: 0;
-					font-family: 'Josefin Sans', sans-serif;
-					&:hover{
-						top: -5px;
-						color: #000;
-						text-shadow: 0 0 3px #000;
-					}
-					&:active{
-						transform: scale(1.05);
-					}
-				}
-			}
-		}
-	}
+button{
+	cursor: pointer;
+	transition: .2s;
 }
 
 header{
-	padding: 50px 0;
-	font-family: 'Play', sans-serif;
-	.slider{
-		.slide{
-			border-radius: 10px;
-			img{
-				width: 100%;
-				border-radius: 10px;
-			}
-		}
-	}
-	h6{
-		font-family: 'Pt sans', sans-serif;
-		font-weight: 300;
-		font-style: italic;
-	}
-	p{
-		margin-bottom: 7.5px;
-	}
-	ul{
-		padding: 0 0 0 20px;
-		margin-bottom: 15px;
-		list-style-type: none;
-		li{
-			font-style: italic;
-			text-transform: capitalize;
-			&:before{
-				content: '-';
-				margin-right: 5px;
-			}
-		}
-		&:last-child{
-			li:last-child{
-				text-transform: unset;
-			}
-		}
-	}
-}
-
-main{
-	padding: 100px 0;
-	margin: -100px 0;
-	section{
-		margin: 100px auto;
-	}
-	#appearance{
+	.headertop{
+		display: flex;
 		h4{
-			margin: auto 0 auto 15px;
-			color: #999;
-			text-align: center;
-		}
-		p{
-			margin-top: 15px;
+			margin: auto auto auto 100px;
 		}
 		button{
+			display: flex;
 			background: transparent;
-			border: 0;
-			cursor: pointer;
-			padding: 10px 15px;
-			display: flex;
-			img{
-				margin: auto 5px auto 0;
-			}
-		}
-	}
-	#latestWorks{
-		.slider{
-			display: flex;
-			height: 100%;
-			.slide{
-				flex-basis: 25%;
-				height: 100%;
-				cursor: pointer;
-				img{
-					display: block;
-					width: 100%;
-					height: auto;
-				}
-			}
-		}
-
-	}
-	#testimionals{
-		p{
-			margin: 15px auto;
-		}
-	}
-	#clients{
-		.clients__row{
-			display: flex;
-			flex-wrap: wrap;
-			padding: 30px 0;
-			.client{
-				flex-basis: 33.3333%;
-				margin: auto;
-				display: flex;
-				height: 100px;
-				box-shadow: inset 0px 0px 20px 0px #f4e7ef;
-				img{
-					margin: auto;
-				}
-			}
-		}
-	}
-	.download{
-		border: 3px solid #86d8fd;
-		background: #e8fcfe;
-		button{
-			width: 100%;
-			padding: 15px;
-			background: transparent;
-			border: 3px solid #fff;
-			font-family: 'Josefin Sans', sans-serif;
-			font-size: 18px;
-			cursor: pointer;
-			transition: .3s;
-			&:hover{
-				background: #fff;
-			}
-		}
-	}
-}
-
-footer{
-	margin-top: 100px;
-	background: #e8ebf1;
-	padding: 100px 0 30px;
-	ul{
-		list-style-type: none;
-	}
-	h4{
-		margin-bottom: 15px;
-	}
-	p{
-		margin-bottom: 30px;
-	}
-	.socials{
-		span{
-			margin: auto;
-			display: flex;
-			width: 35px;
-			height: 35px;
-			padding: 5px;
-			cursor: pointer;
-			&.weblancer{
-				background: #3174af;
-				border-radius: 50%;
-			}			
-			&.freelancehunt{
-				padding: 0;
-				border-radius: 50%;
-				img{
-					width: 100%;
-				}
-			}
-			img{
-				margin: auto;
-				width: 15px;
-				height: auto;
-			}
-		}
-	}
-}
-
-@media (max-width: 992px) {
-	.headertop{
-		.logotype{
-			font-size: 25px;
-		}
-		nav{
-			ul{
-				li{
-					margin: auto 5px;
-				}
-			}
-		}
-		padding: 25px;
-	}
-	main{
-		margin: 0;
-		padding: 0;
-		section{
-			margin: 30px auto;
-		}
-		#appearance{
-			margin-bottom: -30px;
-			.appearance{
-				margin-bottom: 30px;
-			}
-		}
-	}
-	footer{
-		.logotype{
-			flex: 100%;
-			justify-content: left;
-		}
-		.block{
-			margin-bottom: 30px;
-		}
-		.d-flex{
-			flex-wrap: wrap;
-		}
-		.logotype{
-			flex: 100%;
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.headertop{
-		.menu {
 			flex-direction: column;
-			button{
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				margin: auto 0 auto auto;
-				padding: 5px;
-				border: 0;
-				background: transparent;
-				cursor: pointer;
-				span{
-					display: block;
-					height: 1px;
-					width: 30px;
-					margin: 3px 0;
-					background: #000;
-					transition: .3s;
-				}
-				&:focus{
-					outline: none;
-				}
-				&:active,&:hover{
-					border: 0;
-					box-shadow: 0;
-					outline: none;
-				}
+			height: 25px;
+			justify-content: space-around;
+			border: 0;
+			margin: auto 0 auto auto;
+			span{
+				display: block;
+				width: 25px;
+				height: 3px;
+				background-color: #000;
+				border-radius: 5px;
+				transition: .2s;
+				transform: rotateY(0);
 			}
-			nav{
-				position: absolute;
-				z-index: 9999;
-				left: 0;
-				top: 50px;
-				width: 100%;
-				padding: 0 15px;
-				background: #fafafa;
-			}
-		}
-		nav{
-			ul{
-				flex-direction: column;
-				opacity: 0;
-				height: 0;
-				transition: 300ms;
-				&.menuVisible{
-					opacity: 1;
-					height: 200px;
+			&:hover{
+				span:nth-child(1){
+					position: absolute;
+					transform: rotate(45deg);
+				}
+				span:nth-child(2){
+					opacity: 0;
+
+				}
+				span:nth-child(3){
+					position: absolute;
+					transform: rotate(-45deg);
 				}
 			}
 		}
 	}
-	header{
-		h2{
-			margin-top: 30px;
+	.slidersection{
+		display: flex;
+		h4{
+			writing-mode: vertical-lr;
+			transform: rotate(180deg);
+			a{
+				text-decoration: none;
+			}
 		}
-	}
-	main{
-		section{
-			margin: 30px auto;
+		.current__page{
+			display: flex;
+			&:before{
+				display: block;
+				height: 5px;
+				background: #000;
+				width: 50px;
+			}
 		}
 	}
 }

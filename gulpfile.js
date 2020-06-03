@@ -83,7 +83,7 @@ function about(projectName) {
 
 }
 
+exports.default = serve;
 exports.image = imageMin;
 exports.sass = gulp.series(sassReload, minifyCss);
 exports.build = gulp.series(minifyCss, concatjs, imageMin);
-exports.default = gulp;
