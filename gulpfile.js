@@ -61,10 +61,10 @@ function js() {
 }
 
 function concatjs() {
-	return gulp.src(path.js + ['jquery.js', 'libs/slick.min.js', 'index.js'])
-	.pipe(concatjs())
-	.pipe(gulp.dest(path.src))
+	return gulp.src([path.js+'jquery.js', path.js+'libs/slick.min.js', path.js+'index.js'])
+	.pipe(concat('common.min.js'))
+	.pipe(gulp.dest(path.js))
 }
 
-exports.build = imageMin;
-exports.default = concatjs;
+exports.build = gulp.series(concatjs, imageMin);
+exports.default = gulp;
