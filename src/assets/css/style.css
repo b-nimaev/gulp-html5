@@ -2830,6 +2830,24 @@ button {
   cursor: pointer;
   transition: .2s; }
 
+.btn {
+  border: 0;
+  background: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 18px;
+  font-size: 14px;
+  position: relative; }
+
+.btn-primary:before {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  z-index: -1;
+  right: 50%;
+  top: 20%;
+  background: #ffcc00; }
+
 header .headertop {
   display: flex; }
   header .headertop h4 {
@@ -2869,7 +2887,9 @@ header .slidersection {
   header .slidersection .current__page {
     display: flex; }
     header .slidersection .current__page:before {
+      content: '';
       display: block;
-      height: 5px;
+      height: 1px;
+      margin: auto 15px auto 0;
       background: #000;
       width: 50px; }
